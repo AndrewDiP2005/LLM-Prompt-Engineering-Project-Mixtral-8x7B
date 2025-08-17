@@ -1,10 +1,11 @@
 # Project: Analyzing Prompt Engineering Techniques on LLMs
 
-This project demonstrates a systematic approach to evaluating and improving the output of Large Language Models (LLMs) through advanced prompt engineering.
+This project demonstrates a systematic approach to evaluating and improving the output of Large Language Models (LLMs) through different prompt engineering techniques.
 
 ## Objective
 
-The goal of this project was to test how different prompting techniques affect an LLM's ability to solve a logic riddle that a simple, direct prompt fails to answer correctly.
+I wanted to test how different prompting techniques affect an LLM's ability to solve a logic riddle.
+I expected the initial Zero-shot technique to fail, and improved techniques to perform better.
 
 ## Methodology
 
@@ -31,5 +32,6 @@ This table summarizes the performance of each prompting technique.
 * **Few-Shot:** By providing a clear example of a similar, correctly solved riddle, the model was able to replicate the reasoning pattern and arrive at the correct answer of 3 sisters.
 
 ## Conclusion
+
 
 This experiment conclusively demonstrates that for complex logical tasks, advanced techniques like **Few-Shot prompting are essential** for ensuring reliable and accurate LLM performance. A simple prompt is insufficient and can lead to confident but incorrect answers.
