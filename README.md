@@ -17,21 +17,22 @@ I expected the initial Zero-shot technique to fail, and improved techniques to p
 
 This table summarizes the performance of each prompting technique.
 
-| Prompt Technique    | Final Score | Outcome                                        |
-| :------------------ | :---------: | :--------------------------------------------- |
-| Zero-Shot           |     4/8     | Incorrect answer, flawed reasoning             |
-| Chain-of-Thought    |     4/8     | Incorrect answer, flawed step-by-step logic    |
-| Role-Playing        |     4/8     | Incorrect answer, nonsensical reasoning        |
+| Prompt Technique    | Final Score | Outcome                                      |
+| :------------------ | :---------: | :------------------------------------------- |
+| Zero-Shot           |     4/8     | Incorrect answer, flawed reasoning           |
+| Chain-of-Thought    |     4/8     | Incorrect answer, flawed step-by-step logic  |
+| Role-Playing        |   4.5/8     | Incorrect answer, nonsensical reasoning      |
 | **Few-Shot** |   **8/8** | **Correct answer, flawless reasoning** |
 
 ## Detailed Analysis
 
-* **Zero-Shot:** The initial prompt resulted in an incorrect answer of 2 sisters, with the model failing to count "Mary" as a sibling.
-* **Chain-of-Thought:** This technique also failed, as the model incorrectly identified the mother and uncle as siblings in its reasoning chain.
-* **Role-Playing:** Assigning the model a "logician" persona resulted in a new incorrect answer of 0, demonstrating a different mode of logical failure.
-* **Few-Shot:** By providing a clear example of a similar, correctly solved riddle, the model was able to replicate the reasoning pattern and arrive at the correct answer of 3 sisters.
+* **Zero-Shot:** The initial prompt resulted in an incorrect answer of 2 sisters, with the model failing to count "Mary" as a sister.
+* **Chain-of-Thought:** This technique also failed, as the model incorrectly identified the mother and uncle as siblings.
+* **Role-Playing:** Assigning the model a "logician" persona resulted in a new incorrect answer of 0, demonstrating a different logical failure.
+* **Few-Shot:** By providing a clear example of a similar, correctly-solved riddle, the model was able to replicate the reasoning pattern and arrive at the correct answer of 3 sisters.
 
 ## Conclusion
 
 
-This experiment conclusively demonstrates that for complex logical tasks, advanced techniques like **Few-Shot prompting are essential** for ensuring reliable and accurate LLM performance. A simple prompt is insufficient and can lead to confident but incorrect answers.
+This experiment conclusively demonstrates that for complex logical tasks, advanced techniques like **Few-Shot prompting** are essential for ensuring reliable and accurate LLM performance. A simple prompt is insufficient and can lead to confident but incorrect answers.
+
